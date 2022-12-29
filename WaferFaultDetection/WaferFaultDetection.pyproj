@@ -1,0 +1,89 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>af6e238d-9e92-4c9a-8572-e15b931d5c66</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>WaferFaultDetection</Name>
+    <RootNamespace>TrainingModel</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="application_logging\logger.py" />
+    <Compile Include="application_logging\__init__.py" />
+    <Compile Include="best_model_finder\tuner.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="data_ingestion\data_load.py" />
+    <Compile Include="data_ingestion\__init__.py" />
+    <Compile Include="data_preprocessing\clustering.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="data_preprocessing\preprocessing.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="file_operations\file_methods.py" />
+    <Compile Include="main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="object_creator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="file_operations\read_json.py" />
+    <Compile Include="prediction\predict.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runserver.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="training_model\train_model.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="application_logging\" />
+    <Folder Include="data_ingestion\" />
+    <Folder Include="file_operations\" />
+    <Folder Include="model\" />
+    <Folder Include="best_model_finder\" />
+    <Folder Include="data_preprocessing\" />
+    <Folder Include="templates\" />
+    <Folder Include="static\" />
+    <Folder Include="prediction_output_file\" />
+    <Folder Include="prediction_file_db\" />
+    <Folder Include="prediction_logs\" />
+    <Folder Include="training_model\" />
+    <Folder Include="prediction\" />
+    <Folder Include="training_logs\" />
+    <Folder Include="training_file_db\" />
+    <Folder Include="preprocessing_data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.json" />
+    <Content Include="prediction_file_db\InputFile.csv" />
+    <Content Include="static\style.css" />
+    <Content Include="templates\index.html" />
+    <Content Include="templates\table.html" />
+    <Content Include="training_file_db\InputFile.csv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

@@ -1,0 +1,11 @@
+{
+  "LogPath": {
+    "training": "training_logs",
+    "prediction": "prediction_logs"
+  },
+
+  "data": {
+    "training": "training_file_db/InputFile.csv",
+    "prediction": "prediction_file_db/InputFile.csv"
+  }
+}

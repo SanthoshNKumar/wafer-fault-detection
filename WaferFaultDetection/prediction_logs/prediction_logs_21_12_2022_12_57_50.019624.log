@@ -1,0 +1,32 @@
+2022-12-21 12:57:52.112692--------->Start of Prediction
+2022-12-21 12:57:53.665938--------->Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-12-21 12:57:53.665938--------->size of the training data :(837, 591)
+2022-12-21 12:58:01.662950--------->Entered the is_null_present method of the Preprocessor class
+2022-12-21 12:58:01.677949--------->Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-12-21 12:58:01.677949--------->Entered the impute_missing_values method of the Preprocessor class
+2022-12-21 12:58:02.320056--------->Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2022-12-21 12:58:02.322051--------->Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-12-21 12:58:02.322051--------->Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-12-21 12:58:03.993131--------->Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-12-21 12:58:03.994099--------->Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-12-21 12:58:03.996126--------->Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-12-21 12:58:03.996126--------->Entered the load_model method of the File_Operation class
+2022-12-21 12:58:03.996126--------->Entered the load_model method of the File_Operation class
+2022-12-21 12:58:03.996126--------->Model File KMeans.sav loaded. Exited the load_model method of the Model_Finder class
+2022-12-21 12:58:03.996126--------->Model File KMeans.sav loaded. Exited the load_model method of the Model_Finder class
+2022-12-21 12:58:04.103804--------->Entered the find_correct_model_file method of the File_Operation class
+2022-12-21 12:58:04.105799--------->Entered the load_model method of the File_Operation class
+2022-12-21 12:58:04.105799--------->Entered the load_model method of the File_Operation class
+2022-12-21 12:58:04.105799--------->Model File XGBoost1.sav loaded. Exited the load_model method of the Model_Finder class
+2022-12-21 12:58:04.105799--------->Model File XGBoost1.sav loaded. Exited the load_model method of the Model_Finder class
+2022-12-21 12:58:10.862902--------->Entered the find_correct_model_file method of the File_Operation class
+2022-12-21 12:58:10.862902--------->Entered the load_model method of the File_Operation class
+2022-12-21 12:58:10.863865--------->Entered the load_model method of the File_Operation class
+2022-12-21 12:58:10.863865--------->Model File XGBoost0.sav loaded. Exited the load_model method of the Model_Finder class
+2022-12-21 12:58:10.863865--------->Model File XGBoost0.sav loaded. Exited the load_model method of the Model_Finder class
+2022-12-21 12:58:15.542934--------->Entered the find_correct_model_file method of the File_Operation class
+2022-12-21 12:58:15.543931--------->Entered the load_model method of the File_Operation class
+2022-12-21 12:58:15.543931--------->Entered the load_model method of the File_Operation class
+2022-12-21 12:58:15.543931--------->Model File XGBoost2.sav loaded. Exited the load_model method of the Model_Finder class
+2022-12-21 12:58:15.543931--------->Model File XGBoost2.sav loaded. Exited the load_model method of the Model_Finder class
+2022-12-21 12:58:18.064570--------->End of Prediction

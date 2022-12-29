@@ -1,0 +1,20 @@
+2022-12-21/11:38:25--------->Start of Training
+2022-12-21/11:38:26--------->Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-12-21/11:38:26--------->size of the training data :(1674, 592)
+2022-12-21/11:38:26--------->Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-12-21/11:38:26--------->Entered the separate_label_feature method of the Preprocessor class
+2022-12-21/11:38:26--------->Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-12-21/11:38:26--------->Entered the is_null_present method of the Preprocessor class
+2022-12-21/11:38:26--------->Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-12-21/11:38:26--------->Entered the impute_missing_values method of the Preprocessor class
+2022-12-21/11:38:28--------->Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2022-12-21/11:38:28--------->Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-12-21/11:38:29--------->Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-12-21/11:38:29--------->Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-12-21/11:38:29--------->Entered the elbow_plot method of the KMeansClustering class
+2022-12-21/11:38:31--------->The optimum number of clusters is: 3 . Exited the elbow_plot method of the KMeansClustering class
+2022-12-21/11:38:31--------->Entered the create_clusters method of the KMeansClustering class
+2022-12-21/11:38:31--------->Entered the save_model method of the File_Operation class
+2022-12-21/11:38:31--------->Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2022-12-21/11:38:31--------->succesfully created 3clusters. Exited the create_clusters method of the KMeansClustering class
+2022-12-21/11:38:38--------->Unsuccessful End of Training
